@@ -1,4 +1,4 @@
-package lists.SortingOperations.NumbersSorting;
+package Lists.SortingOperations.NumbersSorting;
 
 import java.util.ArrayList;
 import java.util.Collections;

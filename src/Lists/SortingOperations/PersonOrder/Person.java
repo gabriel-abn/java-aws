@@ -1,4 +1,4 @@
-package lists.SortingOperations.PersonOrder;
+package Lists.SortingOperations.PersonOrder;
 
 public class Person implements Comparable<Person> {
   private String name;

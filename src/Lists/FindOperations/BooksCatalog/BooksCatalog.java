@@ -1,4 +1,4 @@
-package lists.FindOperations.BooksCatalog;
+package Lists.FindOperations.BooksCatalog;
 
 import java.util.ArrayList;
 import java.util.List;
