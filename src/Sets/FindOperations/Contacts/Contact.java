@@ -19,6 +19,10 @@ public class Contact {
     return this.phoneNumber;
   }
 
+  public void setPhoneNumber(String phoneNumber) {
+    this.phoneNumber = phoneNumber;
+  }
+
   @Override
   public boolean equals(Object obj) {
     if (obj == null) {

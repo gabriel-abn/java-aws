@@ -17,28 +17,34 @@ public class ContactsList {
     System.out.println("Contacts: " + this.contacts);
   }
 
-  public void checkContact(String name) {
-    Contact contact = new Contact(name, "");
+  public HashSet<Contact> getContactByName(String name) {
+    HashSet<Contact> contactsByName = new HashSet<>();
 
-    if (this.contacts.contains(contact)) {
-      System.out.println("Contact " + contact + " is in the set");
-    } else {
-      System.out.println("Contact " + contact + " is not in the set");
+    if (this.contacts.isEmpty()) {
+      throw new RuntimeException("No contacts registered.");
     }
+
+    for (Contact contact : this.contacts) {
+      if (contact.getName().equals(name)) {
+        contactsByName.add(contact);
+      }
+    }
+
+    return contactsByName;
   }
 
   public void updateContact(String name, String phoneNumber) {
     Contact contact = new Contact(name, "");
 
-    if (this.contacts.contains(contact)) {
-      this.contacts.remove(contact);
+    if (this.contacts.isEmpty()) {
+      throw new RuntimeException("No contacts registered.");
+    }
 
-      Contact newContact = new Contact(name, phoneNumber);
-
-      this.contacts.add(newContact);
-      System.out.println("Contact " + contact + " updated to " + newContact);
-    } else {
-      System.out.println("Contact " + contact + " is not in the set");
+    for (Contact c : this.contacts) {
+      if (c.equals(contact)) {
+        c.setPhoneNumber(phoneNumber);
+        System.out.println("Contact updated: " + c);
+      }
     }
   }
 
@@ -53,9 +59,7 @@ public class ContactsList {
 
     contactsList.printContacts();
 
-    contactsList.checkContact("John");
-    contactsList.checkContact("Jane");
-    contactsList.checkContact("Jack");
+    System.out.println("Contacts by name: " + contactsList.getContactByName("John"));
 
     contactsList.updateContact("John", "1111111111");
     contactsList.updateContact("Jane", "2222222222");
