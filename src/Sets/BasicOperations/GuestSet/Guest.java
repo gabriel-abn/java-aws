@@ -1,5 +1,7 @@
 package Sets.BasicOperations.GuestSet;
 
+import java.util.Objects;
+
 public class Guest {
   private String name;
   private int code;
@@ -17,11 +19,23 @@ public class Guest {
     return code;
   }
 
-  public boolean equals(Guest guest) {
-    return this.name.equals(guest.getName());
+  @Override
+  public boolean equals(Object obj) {
+    if (this == obj)
+      return true;
+    if (!(obj instanceof Guest guest))
+      return false;
+
+    return getCode() == guest.getCode();
   }
 
+  @Override
+  public int hashCode() {
+    return Objects.hash(getCode());
+  }
+
+  @Override
   public String toString() {
-    return "Name: " + this.name + " Code: " + this.code;
+    return this.code + ": " + this.name;
   }
 }
