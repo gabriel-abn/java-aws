@@ -34,16 +34,15 @@ public class ContactsList {
   }
 
   public void updateContact(String name, String phoneNumber) {
-    Contact contact = new Contact(name, "");
-
     if (this.contacts.isEmpty()) {
       throw new RuntimeException("No contacts registered.");
     }
 
     for (Contact c : this.contacts) {
-      if (c.equals(contact)) {
+      if (c.getName().equalsIgnoreCase(name)) {
         c.setPhoneNumber(phoneNumber);
         System.out.println("Contact updated: " + c);
+        break;
       }
     }
   }
