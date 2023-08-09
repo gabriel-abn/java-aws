@@ -3,7 +3,7 @@ package collections.Sets.SortingOperations.StudentList;
 import java.util.Comparator;
 import java.util.Objects;
 
-public class Student {
+public class Student implements Comparable<Student> {
   private String name;
   private int grade;
   private Long enrollment;
@@ -37,6 +37,11 @@ public class Student {
     }
 
     return this.enrollment.equals(student.getEnrollment());
+  }
+
+  @Override
+  public int compareTo(Student student) {
+    return this.name.compareTo(student.getName());
   }
 
   @Override
