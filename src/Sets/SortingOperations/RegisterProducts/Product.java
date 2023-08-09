@@ -51,11 +51,13 @@ public class Product implements Comparable<Product> {
 
   @Override
   public boolean equals(Object other) {
-    if (other == this)
+    if (other == this) {
       return true;
-    if (!(other instanceof Product))
+    }
+    if (!(other instanceof Product product)) {
       return false;
-    Product product = (Product) other;
+    }
+
     return this.code == product.getCode();
   }
 
