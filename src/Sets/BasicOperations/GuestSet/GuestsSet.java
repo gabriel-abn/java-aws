@@ -17,6 +17,9 @@ public class GuestsSet {
     for (Guest guest : this.guests) {
       if (guest.getCode() == code) {
         this.guests.remove(guest);
+
+        System.out.println("Guest removed: " + guest);
+
         break;
       }
     }
@@ -27,9 +30,11 @@ public class GuestsSet {
   }
 
   public void printGuests() {
+    System.out.println("Guests:");
     for (Guest guest : this.guests) {
       System.out.println(guest);
     }
+    System.out.println("---------------");
   }
 
   public static void main(String[] args) {
@@ -51,7 +56,5 @@ public class GuestsSet {
     guestsSet.removeGuestByCode(5);
 
     System.out.println("Number of guests: " + guestsSet.getNumberOfGuests());
-
-    guestsSet.printGuests();
   }
 }
