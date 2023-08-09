@@ -26,6 +26,10 @@ public class ConsumerExemple {
       }
     });
 
+    names.stream()
+        .filter(name -> name.contains("K"))
+        .forEach(name -> System.out.println("Good morning " + name));
+
     // Usando o método accept
     names.stream().forEach(new Consumer<String>() {
       @Override
