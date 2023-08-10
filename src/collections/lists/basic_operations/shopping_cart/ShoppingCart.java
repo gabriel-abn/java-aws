@@ -1,4 +1,4 @@
-package collections.Lists.BasicOperations.ShoppingCart;
+package collections.lists.basic_operations.shopping_cart;
 
 import java.util.ArrayList;
 

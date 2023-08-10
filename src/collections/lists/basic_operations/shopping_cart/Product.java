@@ -1,4 +1,4 @@
-package collections.Lists.BasicOperations.ShoppingCart;
+package collections.lists.basic_operations.shopping_cart;
 
 public class Product {
   private String name;
@@ -24,6 +24,7 @@ public class Product {
   }
 
   public void printProduct() {
-    System.out.println(this.name + ", price " + this.price + ", quantity " + this.quantity);
+    System.out.println(
+        this.name + ", price " + this.price + ", quantity " + this.quantity);
   }
 }

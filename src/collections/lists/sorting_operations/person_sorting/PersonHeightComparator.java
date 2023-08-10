@@ -1,4 +1,4 @@
-package collections.Lists.SortingOperations.PersonOrder;
+package collections.lists.sorting_operations.person_sorting;
 
 import java.util.Comparator;
 

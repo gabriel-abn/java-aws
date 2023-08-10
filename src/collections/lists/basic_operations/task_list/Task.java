@@ -1,4 +1,4 @@
-package collections.Lists.BasicOperations.TasksList;
+package collections.lists.basic_operations.task_list;
 
 public class Task {
   String description;

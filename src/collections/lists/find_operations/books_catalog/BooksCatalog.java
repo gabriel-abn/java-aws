@@ -1,4 +1,4 @@
-package collections.Lists.FindOperations.BooksCatalog;
+package collections.lists.find_operations.books_catalog;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -54,7 +54,8 @@ public class BooksCatalog {
     ArrayList<Book> booksByYearsInterval = new ArrayList<Book>();
 
     if (startYear > endYear) {
-      throw new IllegalStateException("The start year must be less than the end year.");
+      throw new IllegalStateException(
+          "The start year must be less than the end year.");
     }
 
     if (this.books.isEmpty()) {
@@ -62,7 +63,8 @@ public class BooksCatalog {
     }
 
     for (int i = 0; i < this.books.size(); i++) {
-      if (books.get(i).getYear() >= startYear && books.get(i).getYear() <= endYear) {
+      if (books.get(i).getYear() >= startYear
+          && books.get(i).getYear() <= endYear) {
         booksByYearsInterval.add(books.get(i));
       }
     }
@@ -77,7 +79,8 @@ public class BooksCatalog {
   public static void main(String[] args) {
     Book book1 = new Book("The Lord of the Rings", "Gabriel", 1954);
     Book book2 = new Book("The Hobbit", "J. R. R. Tolkien", 1937);
-    Book book3 = new Book("The Fellowship of the Ring", "J. R. R. Tolkien", 1954);
+    Book book3 = new Book("The Fellowship of the Ring", "J. R. R. Tolkien",
+        1954);
     Book book4 = new Book("The Two Towers", "Gabriel", 1954);
     Book book5 = new Book("The Return of the King", "J. R. R. Tolkien", 1955);
 

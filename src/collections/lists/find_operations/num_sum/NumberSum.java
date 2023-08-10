@@ -1,4 +1,4 @@
-package collections.Lists.FindOperations.NumSum;
+package collections.lists.find_operations.num_sum;
 
 import java.util.ArrayList;
 

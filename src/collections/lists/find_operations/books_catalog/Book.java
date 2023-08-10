@@ -1,4 +1,4 @@
-package collections.Lists.FindOperations.BooksCatalog;
+package collections.lists.find_operations.books_catalog;
 
 public class Book {
   private String title;

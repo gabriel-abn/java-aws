@@ -1,4 +1,4 @@
-package collections.Lists.SortingOperations.PersonOrder;
+package collections.lists.sorting_operations.person_sorting;
 
 import java.util.ArrayList;
 
@@ -16,7 +16,8 @@ public class PersonSorting {
   public void print() {
     for (Person person : this.people) {
       System.out
-          .println(person.getName() + " is " + person.getAge() + " years old and " + person.getHeight() + "m tall.");
+          .println(person.getName() + " is " + person.getAge()
+              + " years old and " + person.getHeight() + "m tall.");
     }
   }
 
