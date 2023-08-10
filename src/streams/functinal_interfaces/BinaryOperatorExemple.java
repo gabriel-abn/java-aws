@@ -1,4 +1,4 @@
-package streams.functinalInterfaces;
+package streams.functinal_interfaces;
 
 import java.util.List;
 import java.util.function.BinaryOperator;
