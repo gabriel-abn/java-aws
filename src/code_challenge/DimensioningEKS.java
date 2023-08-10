@@ -1,4 +1,4 @@
-package CodeChallenge;
+package code_challenge;
 
 import java.util.Scanner;
 
