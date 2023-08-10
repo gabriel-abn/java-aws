@@ -1,4 +1,4 @@
-package collections.Map.FindOperations.ProductsStorage;
+package collections.maps.find_operations.product_storage;
 
 import java.util.HashMap;
 
@@ -89,6 +89,7 @@ public class ProductStorage {
     }
 
     System.out.println("Higher quantity product: " + higherQuantityProduct);
-    System.out.println("Total price: " + higherQuantityProduct.getPrice() * higherQuantityProduct.getQuantity());
+    System.out.println("Total price: " + higherQuantityProduct.getPrice()
+        * higherQuantityProduct.getQuantity());
   }
 }

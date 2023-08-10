@@ -1,4 +1,4 @@
-package collections.Map.BasicOperations.Dictionary;
+package collections.maps.basic_operations.dictionary;
 
 import java.util.HashMap;
 

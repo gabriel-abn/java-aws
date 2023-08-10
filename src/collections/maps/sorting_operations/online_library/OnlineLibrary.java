@@ -1,4 +1,4 @@
-package collections.Map.SortingOperations.OnlineLibrary;
+package collections.maps.sorting_operations.online_library;
 
 import java.util.HashMap;
 import java.util.Map;

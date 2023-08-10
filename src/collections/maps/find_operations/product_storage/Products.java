@@ -1,4 +1,4 @@
-package collections.Map.FindOperations.ProductsStorage;
+package collections.maps.find_operations.product_storage;
 
 public class Products {
   private String name;

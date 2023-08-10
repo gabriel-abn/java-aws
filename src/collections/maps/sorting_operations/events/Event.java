@@ -1,4 +1,4 @@
-package collections.Map.SortingOperations.Events;
+package collections.maps.sorting_operations.events;
 
 public class Event {
   private String name;

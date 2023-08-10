@@ -1,4 +1,4 @@
-package collections.Map.SortingOperations.Events;
+package collections.maps.sorting_operations.events;
 
 import java.time.LocalDate;
 import java.util.HashMap;
@@ -21,11 +21,13 @@ public class EventsSchedule {
       throw new RuntimeException("The events list is empty");
     }
 
-    TreeMap<LocalDate, Event> sortedEvents = new TreeMap<LocalDate, Event>(this.events);
+    TreeMap<LocalDate, Event> sortedEvents = new TreeMap<LocalDate, Event>(
+        this.events);
 
     System.out.println("Events: ");
     for (LocalDate date : sortedEvents.keySet()) {
-      System.out.println(date + ": " + sortedEvents.get(date).getName() + " - " + sortedEvents.get(date).getGuest());
+      System.out.println(date + ": " + sortedEvents.get(date).getName() + " - "
+          + sortedEvents.get(date).getGuest());
     }
   }
 
@@ -34,13 +36,15 @@ public class EventsSchedule {
       throw new RuntimeException("The events list is empty");
     }
 
-    TreeMap<LocalDate, Event> sortedEvents = new TreeMap<LocalDate, Event>(this.events);
+    TreeMap<LocalDate, Event> sortedEvents = new TreeMap<LocalDate, Event>(
+        this.events);
 
     System.out.println("Next event: ");
 
     for (LocalDate date : sortedEvents.keySet()) {
       if (date.isAfter(LocalDate.now())) {
-        System.out.println(date + ": " + sortedEvents.get(date).getName() + " - " + sortedEvents.get(date).getGuest());
+        System.out.println(date + ": " + sortedEvents.get(date).getName()
+            + " - " + sortedEvents.get(date).getGuest());
         break;
       }
     }
@@ -50,14 +54,21 @@ public class EventsSchedule {
     EventsSchedule eventsSchedule = new EventsSchedule();
     Random random = new Random();
 
-    String[] eventNames = { "Coachella", "Lollapalooza", "Burning Man", "Tomorrowland", "Glastonbury", "Woodstock",
-        "Ultra Music Festival", "Electric Daisy Carnival", "Rock in Rio", "Reading and Leeds Festival",
-        "Sziget Festival", "Roskilde Festival", "Primavera Sound", "Exit Festival", "Mysteryland", "Download Festival",
-        "Wacken Open Air", "Hellfest", "Graspop Metal Meeting", "Metallica By Request" };
+    String[] eventNames = { "Coachella", "Lollapalooza", "Burning Man",
+        "Tomorrowland", "Glastonbury", "Woodstock",
+        "Ultra Music Festival", "Electric Daisy Carnival", "Rock in Rio",
+        "Reading and Leeds Festival",
+        "Sziget Festival", "Roskilde Festival", "Primavera Sound",
+        "Exit Festival", "Mysteryland", "Download Festival",
+        "Wacken Open Air", "Hellfest", "Graspop Metal Meeting",
+        "Metallica By Request" };
 
-    String[] guestNames = { "Beyoncé", "Kanye West", "Lady Gaga", "Drake", "Ariana Grande", "Ed Sheeran",
-        "Taylor Swift", "Justin Bieber", "Rihanna", "Bruno Mars", "Kendrick Lamar", "The Weeknd", "Post Malone",
-        "Billie Eilish", "Travis Scott", "Harry Styles", "Dua Lipa", "Shawn Mendes", "Lizzo", "Cardi B" };
+    String[] guestNames = { "Beyoncé", "Kanye West", "Lady Gaga", "Drake",
+        "Ariana Grande", "Ed Sheeran",
+        "Taylor Swift", "Justin Bieber", "Rihanna", "Bruno Mars",
+        "Kendrick Lamar", "The Weeknd", "Post Malone",
+        "Billie Eilish", "Travis Scott", "Harry Styles", "Dua Lipa",
+        "Shawn Mendes", "Lizzo", "Cardi B" };
 
     for (int i = 0; i < 20; i++) {
       int randomEventIndex = random.nextInt(eventNames.length);

@@ -1,4 +1,4 @@
-package collections.Map.FindOperations.WordsCounting;
+package collections.maps.find_operations.words_counting;
 
 import java.util.HashMap;
 

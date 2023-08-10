@@ -1,4 +1,4 @@
-package collections.Map.BasicOperations.Contacts;
+package collections.maps.basic_operations.contacts;
 
 import java.util.HashMap;
 
