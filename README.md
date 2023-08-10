@@ -16,9 +16,14 @@ This repository contains the practices and projects that I developed during the 
   - [x] Fundamentals of Object Oriented Programming with *Java*
   - [x] Pillars of Object Oriented Programming in *Java*
   - [x] Knowing **Java Collections**
-  - [ ] Gaining productivity with **Stream API**
+  - [x] Gaining productivity with **Stream API**
   - [ ] (Challenge) [Object Orientation and **UML**: iPhone Class Diagramming]
 - [ ] Abstracting the Real World with Java Code Challenges
+  - [ ] Validating Password Strength in IAM
+  - [ ] Download Speed on AWS
+  - [ ] Calculating Your Costs on AWS
+  - [ ] Rules for Infrastructure Dimensioning with EKS
+  - [ ] AWS Monitoring and Log Analysis
 - [ ] SQL and NoSQL Database for Devs
 - [ ] Gaining Productivity with Spring Boot
 - [ ] Fundamentals of Cloud Computing with AWS
@@ -40,9 +45,14 @@ Este repositório contém as práticas e projetos que desenvolvi durante o Bootc
   - [x] Fundamentos da Programação Orientada a Objetos com *Java*
   - [x] Pilares da Programação Orientada a Objetos em *Java*
   - [x] Conhecendo **Collections Java**
-  - [ ] Ganhando produtividade com **Stream API**
+  - [x] Ganhando produtividade com **Stream API**
   - [ ] (Desafio) [Orientação a Objetos e **UML**: Diagramação de Classes do iPhone]
 - [ ] Abstraindo o Mundo Real com Desafios de Código Java
+  - [ ] Validando a Força de Senhas no IAM
+  - [ ] Velocidade de Download na AWS
+  - [ ] Calculando Seus Custos na AWS
+  - [ ] Regras Para Dimensionamento de Infraestrutura com EKS
+  - [ ] Monitoramento e Análise de Logs AWS
 - [ ] Banco de Dados SQL e NoSQL para Devs
 - [ ] Ganhando Produtividade com Spring Boot
 - [ ] Fundamentos da Cloud Computing com AWS
