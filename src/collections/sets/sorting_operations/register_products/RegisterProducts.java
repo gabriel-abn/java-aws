@@ -1,4 +1,4 @@
-package collections.Sets.SortingOperations.RegisterProducts;
+package collections.sets.sorting_operations.register_products;
 
 import java.util.HashSet;
 import java.util.TreeSet;
@@ -28,7 +28,8 @@ public class RegisterProducts {
   }
 
   public void listProductsByPrice() {
-    TreeSet<Product> productsByPrice = new TreeSet<Product>(new CompareProductByPrice());
+    TreeSet<Product> productsByPrice = new TreeSet<Product>(
+        new CompareProductByPrice());
 
     if (this.products.isEmpty()) {
       System.out.println("No products registered.");

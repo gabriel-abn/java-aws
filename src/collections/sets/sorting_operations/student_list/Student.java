@@ -1,4 +1,4 @@
-package collections.Sets.SortingOperations.StudentList;
+package collections.sets.sorting_operations.student_list;
 
 import java.util.Comparator;
 import java.util.Objects;

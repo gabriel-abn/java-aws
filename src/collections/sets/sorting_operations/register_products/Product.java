@@ -1,4 +1,4 @@
-package collections.Sets.SortingOperations.RegisterProducts;
+package collections.sets.sorting_operations.register_products;
 
 import java.util.Comparator;
 import java.util.Objects;
@@ -68,7 +68,8 @@ public class Product implements Comparable<Product> {
 
   @Override
   public String toString() {
-    return this.name + ", $" + String.format("%.2f", this.price) + ", " + this.quantity + " units, Total: $"
+    return this.name + ", $" + String.format("%.2f", this.price) + ", "
+        + this.quantity + " units, Total: $"
         + String.format("%.2f", this.getTotalValueInStock());
   }
 }

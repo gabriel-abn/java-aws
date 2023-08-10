@@ -1,4 +1,4 @@
-package collections.Sets.FindOperations.TaskList;
+package collections.sets.find_operations.task_list;
 
 public class Task {
   private String description;

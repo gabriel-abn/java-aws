@@ -1,4 +1,4 @@
-package collections.Sets.FindOperations.Contacts;
+package collections.sets.find_operations.contacts;
 
 import java.util.HashSet;
 
@@ -58,7 +58,8 @@ public class ContactsList {
 
     contactsList.printContacts();
 
-    System.out.println("Contacts by name: " + contactsList.getContactByName("John"));
+    System.out
+        .println("Contacts by name: " + contactsList.getContactByName("John"));
 
     contactsList.updateContact("John", "1111111111");
     contactsList.updateContact("Jane", "2222222222");

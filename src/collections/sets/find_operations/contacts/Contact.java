@@ -1,4 +1,4 @@
-package collections.Sets.FindOperations.Contacts;
+package collections.sets.find_operations.contacts;
 
 import java.util.Objects;
 

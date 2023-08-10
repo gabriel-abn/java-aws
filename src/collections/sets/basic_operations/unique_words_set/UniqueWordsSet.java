@@ -1,4 +1,4 @@
-package collections.Sets.BasicOperations.UniqueWordsSet;
+package collections.sets.basic_operations.unique_words_set;
 
 import java.util.HashSet;
 

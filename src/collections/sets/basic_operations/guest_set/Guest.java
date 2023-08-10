@@ -1,4 +1,4 @@
-package collections.Sets.BasicOperations.GuestSet;
+package collections.sets.basic_operations.guest_set;
 
 import java.util.Objects;
 

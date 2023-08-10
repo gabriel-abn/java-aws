@@ -1,4 +1,4 @@
-package collections.Sets.SortingOperations.StudentList;
+package collections.sets.sorting_operations.student_list;
 
 import java.util.HashSet;
 import java.util.TreeSet;
@@ -42,7 +42,8 @@ public class StudentList {
   }
 
   public void listStudentsByGrade() {
-    TreeSet<Student> studentsByGrade = new TreeSet<Student>(new CompareStudentsByGrade());
+    TreeSet<Student> studentsByGrade = new TreeSet<Student>(
+        new CompareStudentsByGrade());
 
     if (this.students.isEmpty()) {
       throw new RuntimeException("No students registered.");
