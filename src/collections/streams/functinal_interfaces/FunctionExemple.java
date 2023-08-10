@@ -1,4 +1,4 @@
-package streams.functinal_interfaces;
+package collections.streams.functinal_interfaces;
 
 import java.util.List;
 import java.util.function.Function;
